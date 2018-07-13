@@ -6,5 +6,6 @@ wsServer.on("connection",websocket => {
 
     websocket.on('message',message => {
         console.log(message)
-    })
+        websocket.send("ok");
+    });    
 });

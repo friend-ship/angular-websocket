@@ -7,5 +7,6 @@ wsServer.on("connection", function (websocket) {
     websocket.send("hello world welcome");
     websocket.on('message', function (message) {
         console.log(message);
+        websocket.send("ok");
     });
 });
